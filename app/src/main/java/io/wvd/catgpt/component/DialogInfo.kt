@@ -1,6 +1,5 @@
 package io.wvd.catgpt.component
 
-import android.graphics.drawable.Drawable
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
@@ -10,7 +9,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.MutableState
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import io.wvd.catgpt.R
@@ -31,24 +29,24 @@ fun DialogInfo(
         text = {
             Column(Modifier.verticalScroll(rememberScrollState()).fillMaxWidth()) {
                 Text(
-                    text = "Versi Aplikasi",
+                    text = "Application Version",
                     style = MaterialTheme.typography.titleMedium,
                     modifier = Modifier.padding(top = 16.dp),
                     color = MaterialTheme.colorScheme.primary
                 )
                 Text(
-                    text = "4.0.0",
+                    text = "0.0.1",
                     fontSize = MaterialTheme.typography.labelLarge.fontSize,
                     color = MaterialTheme.colorScheme.primary
                 )
                 Text(
-                    text = "Status Rilis",
+                    text = "Release Status",
                     style = MaterialTheme.typography.titleMedium,
                     modifier = Modifier.padding(top = 16.dp),
                     color = MaterialTheme.colorScheme.primary
                 )
                 Text(
-                    "Versi Stabil Beta",
+                    text = "Beta Stable",
                     fontSize = MaterialTheme.typography.labelLarge.fontSize,
                     color = MaterialTheme.colorScheme.primary
                 )
@@ -59,40 +57,40 @@ fun DialogInfo(
                     color = MaterialTheme.colorScheme.primary
                 )
                 Text(
-                    "Sunan Drajat",
+                    text = "Meow",
                     fontSize = MaterialTheme.typography.labelLarge.fontSize,
                     color = MaterialTheme.colorScheme.primary
                 )
                 Text(
-                    text = "Kebijakan Privasi",
+                    text = "Privacy Policy",
                     style = MaterialTheme.typography.titleMedium,
                     modifier = Modifier.padding(top = 16.dp),
                     color = MaterialTheme.colorScheme.primary
                 )
                 Text(
-                    "CatGPT Website",
+                    text = "CatGPT Website",
                     fontSize = MaterialTheme.typography.labelLarge.fontSize,
                     color = MaterialTheme.colorScheme.primary
                 )
                 Text(
-                    text = "Lead Developer",
+                    text = "Contributors",
                     style = MaterialTheme.typography.titleMedium,
                     modifier = Modifier.padding(top = 16.dp),
                     color = MaterialTheme.colorScheme.primary
                 )
                 Text(
-                    "@rasvanjaya21",
+                    text = "@rasvanjaya21",
                     fontSize = MaterialTheme.typography.labelLarge.fontSize,
                     color = MaterialTheme.colorScheme.primary
                 )
                 Text(
-                    text = "Media Sosial",
+                    text = "Social Media",
                     style = MaterialTheme.typography.titleMedium,
                     modifier = Modifier.padding(top = 16.dp),
                     color = MaterialTheme.colorScheme.primary
                 )
                 Text(
-                    "Github",
+                    text = "Github",
                     fontSize = MaterialTheme.typography.labelLarge.fontSize,
                     color = MaterialTheme.colorScheme.primary,
                     modifier = Modifier.padding(bottom = 16.dp)
