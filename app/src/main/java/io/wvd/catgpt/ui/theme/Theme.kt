@@ -7,19 +7,32 @@ import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 
 private val DarkColorScheme = darkColorScheme(
-    primary = Dark,
-    secondary = Light,
+    // used for background
+    background = Dark,
 
-    // custom
-    background = Black
+    // used for text
+    primary = White,
+
+    // used for dialog, meow chat
+    secondary = LightDark,
+
+    // used for input text background
+    surface = MediumDark
+
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = Dark,
-    secondary = Light,
+    // used for background
+    background = Dark,
 
-    // custom
-    background = White
+    // used for text
+    primary = White,
+
+    // used for dialog, meow chat
+    secondary = LightDark,
+
+    // used for input text background
+    surface = MediumDark
 
     /* Other default colors to override
     background = Color(0xFFFFFBFE),
