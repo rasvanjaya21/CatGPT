@@ -9,6 +9,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.MutableState
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import io.wvd.catgpt.R
@@ -35,7 +36,7 @@ fun DialogInfo(
                     color = MaterialTheme.colorScheme.primary
                 )
                 Text(
-                    text = "0.0.1",
+                    text = "0.0.2",
                     fontSize = MaterialTheme.typography.labelLarge.fontSize,
                     color = MaterialTheme.colorScheme.primary
                 )
@@ -103,7 +104,7 @@ fun DialogInfo(
                     openInfoApp.value = false
                 }
             ) {
-                Text("Tutup")
+                Text("Close", color = MaterialTheme.colorScheme.primary)
             }
         }
     )
