@@ -20,3 +20,8 @@ plugins {
     // add dagger plugin
     id 'com.google.dagger.hilt.android' version "2.44" apply false
 }
+
+// custom command for extend "clean project" by adding removing build release too
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
